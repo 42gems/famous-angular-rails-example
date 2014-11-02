@@ -1,0 +1,10 @@
+<fa-app ng-controller='Lesson3Ctrl' id="app">
+	<fa-modifier ng-repeat="box in boxes"
+	             fa-translate="box.position.get()"
+	             fa-size="[100, 50]">
+		<fa-surface fa-background-color="'red'"
+		            fa-click="animate()">
+		  {{box.curve}}
+	  </fa-surface>
+	</fa-modifier>
+</fa-app>
